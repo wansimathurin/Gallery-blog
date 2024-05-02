@@ -5,7 +5,7 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import {Moon,Sun,Google} from 'react-feather'
 import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   const { data: session } = useSession();
   console.log(session);
   if (session) {
@@ -36,4 +36,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
