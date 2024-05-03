@@ -17,6 +17,10 @@
     border-radius: 9px;
     margin-top: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
  }
  .signCard{
     width: 400px;

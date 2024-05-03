@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { useSession, signIn, signOut } from "next-auth/react";
 import {Moon,Sun,Google} from 'react-feather'
 import Image from "next/image";
+import { FcGoogle } from "react-icons/fc";
 
 const Page = () => {
   const { data: session } = useSession();
@@ -30,7 +31,7 @@ const Page = () => {
       {" "}
         <div className={styles.signCard}>
         Not signed in <br />{" "}
-      <button className={styles.button} onClick={() => signIn("google")}>Sign in </button>{" "}
+      <button className={styles.button} onClick={() => signIn("google")}>Sign in <FcGoogle size={30} /> </button>{" "}
         </div>
     </div>
   );
