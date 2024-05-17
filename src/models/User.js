@@ -15,8 +15,10 @@ const userSchema = new Schema({
     },
     role: {
         type: String,
-        required: true
+        required: false,
+        default: "user"
     }
 },{timestamps:true})
 
-export default mongoose.model('User',userSchema);
+
+export default mongoose.models.User || mongoose.model('User', userSchema)

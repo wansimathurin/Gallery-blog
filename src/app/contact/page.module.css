@@ -1,0 +1,39 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   }
+   .container form{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column !important;
+   }
+   .container  h1{
+       font-size: 30px;
+       color: #fff;
+       text-transform: capitalize;
+       margin-bottom: 10px;
+   }
+   .formGet{
+       height: 500px;
+       width: 500px;
+       border:1px solid #61c092 !important;
+       display: flex !important;
+       align-items: center !important;
+       justify-content: center;
+        flex-direction: column !important;
+        gap: 40px;
+   }
+   .formGet input,.formGet textarea{
+       padding: 10px 20px;
+       color: #61c092;
+   }
+   .btn{
+       background-color: #61c092;
+       padding: 10px 20px;
+       width: 55%;
+       color: #fff;
+   }

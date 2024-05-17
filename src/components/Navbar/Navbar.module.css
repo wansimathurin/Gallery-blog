@@ -12,8 +12,9 @@
 .linksContainer{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
     margin-right: 50px;
+    
 }
 .link{
     color: white;
@@ -33,3 +34,14 @@
         display: flex;
     }
 }
+
+.profileImage{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+ 
+    background-color: #0EC093;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #0EC093;
+ }

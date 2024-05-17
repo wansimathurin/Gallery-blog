@@ -9,13 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.2.0",
+    "moment": "^2.30.1",
     "mongoose": "^6.12.8",
     "next": "14.2.2",
     "next-auth": "^4.24.7",
+    "notyf": "^3.10.0",
     "react": "^18",
     "react-dom": "^18",
     "react-feather": "^2.0.10",
-    "react-icons": "^5.2.0"
+    "react-icons": "^5.2.0",
+    "react-overlay-loader": "^0.0.3"
   },
   "devDependencies": {
     "eslint": "^8",

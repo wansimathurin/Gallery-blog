@@ -1,0 +1,113 @@
+.container{
+    height: 100%;
+   
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.topic{
+ 
+}
+.left{
+    width: 50%;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+ .card{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+ }
+.cardImage{
+    height: 250px;
+    width: 100%;
+    background-color: #0EC093;
+    overflow: hidden;
+    position: relative;
+   
+
+ }
+ .image{
+    object-fit: cover;
+ }
+ .title{
+    margin-bottom: 10px;
+ }
+ .cardDesc{
+    width: 70%;
+ }
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.imageArea{
+    height: 550px;
+    width: 500px;
+    background-color: #0EC093;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.userArea{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.userImage{
+    height: 50px;
+    width: 50px;
+    background-color: #0EC093;
+    border-radius: 30px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.button{
+    background-color: #0EC093;
+    border: none;
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 9px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ }
+ .btnArea{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 70%;
+    gap: 10px;
+ }
+ .mainTitle{
+    font-size: 25px;
+    width: 70%;
+ }
+
+
