@@ -8,8 +8,8 @@ import { useRouter } from "next/navigation";
 import { Notyf } from "notyf";
 import 'notyf/notyf.min.css'; 
 import Link from "next/link";
-import { LoadingOverlay, Loader } from 'react-overlay-loader';
-import 'react-overlay-loader/styles.css';
+
+
 
 const Page = () => {
   const [title, setTitle] = useState('');
@@ -92,7 +92,7 @@ const Page = () => {
   };
   return (
     <div className={styles.container}>
-      <Loader fullPage loading={loading} />
+      {/* <LoadingOverlay fullPage loading={loading} /> */}
       <div className={styles.signCard}>
         <h1>Create Post</h1> <br />
         <form className={styles.form} onSubmit={handleSubmit} encType="multipart/form-data">
