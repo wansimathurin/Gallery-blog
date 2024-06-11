@@ -14,13 +14,13 @@ const Navbar = () => {
     { name: "Contact", href: "/contact" },
     { name: "Blog", href: "/blog" },
     { name: "Login", href: "/login" },
-    { name: "Dashboard", href: "/dashboard" },
+    
   ];
   const authLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
-    { name: "Blog", href: "/blog" },
+    { name: "Dashboard", href: "/dashboard" },
   ];
   return (
     <div className={styles.container}>
@@ -42,14 +42,14 @@ const Navbar = () => {
             ))}
         
         {session && (
-          <div className={styles.profileImage}>
+          <Link href={'/login'} className={styles.profileImage}>
             <Image
               src={session.user.image}
               alt="girl picture"
               className={styles.image}
               fill={true}
             />
-          </div>
+          </Link>
         )}
         <Link href={"/login"} className={styles.linkSpecial}>
           Login

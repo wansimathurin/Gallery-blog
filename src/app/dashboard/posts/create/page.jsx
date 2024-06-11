@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import styles from "./page.module.css";
 import { useSession, signIn, signOut } from "next-auth/react";
 import Image from "next/image";
-import { FcGoogle } from "react-icons/fc";
 import { useRouter } from "next/navigation";
 import { Notyf } from "notyf";
 import 'notyf/notyf.min.css'; 
@@ -32,10 +31,7 @@ const Page = () => {
     },
    });
   const { data: session } = useSession();
-  console.log(session);
-  if (session) {
-   
-  }
+ 
 
   const handleSubmit = async (e) => {
     setLoading(true);
@@ -83,7 +79,7 @@ const Page = () => {
     if (img) {
       return (
         <div className={styles.selectedImage}>
-          <Image className={styles.image} fill={true} src={URL.createObjectURL(img)} alt="Selected Image" />
+          <Image className={styles.image} fill={true} src={URL?.createObjectURL(img)} alt="Selected Image" />
         </div>
       );
     } else {
