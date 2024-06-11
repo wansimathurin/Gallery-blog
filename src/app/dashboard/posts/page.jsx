@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './page.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import { initials } from '@/utils/constants'
+import { BaseUrl, initials } from '@/utils/constants'
 import moment from 'moment'
 import { Notyf } from "notyf";
 import 'notyf/notyf.min.css'; 
@@ -25,7 +25,7 @@ function Page() {
     //Get data
    const getAsyncData = async () => {
      await axios
-       .get("http://localhost:3000/api/posts")
+       .get(`${BaseUrl}/api/posts`)
        .then((res) => {
          setData(res.data);
          console.log(res.data);
@@ -39,9 +39,9 @@ function Page() {
    
   // Delete data
   const deletePost = async(id)=>{
-    const res = await fetch(`http://localhost:3000/api/posts/${id}`,{
-      method:'DELETE'
-    })
+    const res = await fetch(`${BaseUrl}/api/posts/${id}`, {
+      method: "DELETE",
+    });
     if (res.status === 200) {
       const result = await res.json();
       console.log(result);

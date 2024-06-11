@@ -5,6 +5,7 @@ import Hero from "@/components/Hero/Hero";
 import Link from "next/link";
 import { useEffect,useState } from "react";
 import axios from "axios";
+import { BaseUrl } from "@/utils/constants";
  
  function Home() {
   const [data, setData] = useState([])
@@ -17,10 +18,13 @@ import axios from "axios";
   //   setData(await res.json())
   // }
    const getAsyncData = async () => {
-      await axios.get('http://localhost:3000/api/posts').then(res => {
-       setData(res.data);
-         console.log(res.data);
-     }).catch(error=>console.log(error.message))
+      await axios
+        .get(`${BaseUrl}/api/posts`)
+        .then((res) => {
+          setData(res.data);
+          console.log(res.data);
+        })
+        .catch((error) => console.log(error.message));
      
    
    }
